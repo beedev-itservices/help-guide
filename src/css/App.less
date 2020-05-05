@@ -1,0 +1,51 @@
+@import 'less/reset.less';
+@import 'less/base.less';
+
+.App {
+    background-color: @mainbg;
+    color: @font;
+
+    nav {
+        .flexrow();
+        justify-content: space-evenly;
+        border-bottom: @border;
+        padding: 1em;
+        background-color: @navbg;
+        color: @mainbg;
+
+        .title-bar {
+            .flexcolumn();
+            padding: 0 1em;
+            font-weight: bold;
+
+            h2 {font-size: 2em;
+                padding: .2em 0;}
+            
+            h4 {font-size: 1.5em;
+                padding: .2em 0;}
+        }
+
+        .nav-links {
+            .flexrow();
+            justify-content: space-evenly;
+            padding: .5em;
+        }
+    }
+    .main-body {
+        .flexcolumn();
+        color: @font;
+        font-size: 3em;
+        font-weight: bold;
+    }
+
+    .list-wrapper {
+        .the-items {
+            .item-card {
+                a {
+                    width: 250px;
+                    img {width: 200px;}
+                }
+            }
+        }
+    }
+}
