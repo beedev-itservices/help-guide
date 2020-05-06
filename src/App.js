@@ -3,7 +3,7 @@ import './css/App.css';
 import Home from "./components/Home";
 import { Route, Link, Switch } from "react-router-dom";
 import data from "./components/datafiles/htmldata";
-import HtmlGuide from "./components/HtmlGuide";
+import HtmlItem from "./components/HtmlItem";
 import HtmlList from "./components/HtmlList";
 
 export default function App() {
@@ -24,11 +24,11 @@ export default function App() {
           </div>
         </nav>
         <Switch>
-          <Route path="/html-guide/:idemID">
-            <HtmlGuide items={tips} />
+          <Route path="/html-guide/:htmlidemID">
+            <HtmlItem htmlitems={tips} />
           </Route>
           <Route path="/html-guide">
-            <HtmlList items={tips} />
+            <HtmlList htmlitems={tips} />
           </Route>
           <Route path="/" component={Home} />
         </Switch>

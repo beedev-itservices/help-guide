@@ -2,12 +2,12 @@ import React from "react";
 import { useParams, useRouteMatch, Route, NavLink, Link, useHistory } from "react-router-dom";
 import HtmlDescription from "./HtmlDescription";
 
-function Html(props) {
+function HtmlItem(props) {
   const params = useParams();
   const { push, goBack } = useHistory();
   const { path, url } = useRouteMatch();
-  console.log("url", url);
-  const guideItem = props.items.find(item => item.htmlid === Number(params.itemID));
+  console.log("ml: htmlguide.jsx: html: url: ", url);
+  const guideItem = props.htmlitems.find(htmlitem => htmlitem.htmlid === Number(params.htmlitemID));
   return (
     <div className="item-wrapper">
       <div className="item-header">
@@ -33,4 +33,4 @@ function Html(props) {
     </div>
   );
 }
-export default Html;
+export default HtmlItem;

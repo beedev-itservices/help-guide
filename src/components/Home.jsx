@@ -3,7 +3,7 @@ import { useHistory } from "react-router-dom";
 
 function Home() {
     const history = useHistory();
-    console.log(history);
+    console.log("ml: home.jsx: Home: ", history);
     const routeToHtml = event => {
         history.push("/HtmlList");
     };

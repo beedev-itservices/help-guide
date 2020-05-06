@@ -3,7 +3,7 @@ import { Link, useHistory } from "react-router-dom";
 
 function HtmlList(props) {
   const { push, goBack } = useHistory();
-  console.log(props);
+  console.log("ml: htmllist.jsx: htmllist: ", props);
   return (
     <div className="list-wrapper">
       <div className="guide">
@@ -18,15 +18,15 @@ function HtmlList(props) {
         </div>
       </div>
       <div className="the-items">
-        {props.items.map(item => (
-          <div className="item-card" key={item.htmlid}>
-            <Link to={`/the-guide/${item.html}/HtmlDescription`}>
+        {props.htmlitems.map(htmlitem => (
+          <div className="item-card" key={htmlitem.htmlid}>
+            <Link to={`/the-guide/${htmlitem.htmlid}/HtmlDescription`}>
               <img
                 className="item-list-image"
-                src={item.htmlimageUrl}
-                alt={item.htmlname}
+                src={htmlitem.htmlimageUrl}
+                alt={htmlitem.htmlname}
               />
-              <p>{item.htmlname}</p>
+              <p>{htmlitem.htmlname}</p>
             </Link>
           </div>
         ))}
