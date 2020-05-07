@@ -41,7 +41,10 @@ export default function App() {
           <Route path="/" component={Home} />
         </Switch>
         <div className="Footer">
-         Created by BeeDev IT Services
+        <div className="madeby">
+        <img src="http://images.craftsnherbs.com/beelogo.jpg" alt="" />
+        <h4>&copy; 2020 by BeeDev IT Services</h4>
+        </div>
         </div>
       </div>
     );
