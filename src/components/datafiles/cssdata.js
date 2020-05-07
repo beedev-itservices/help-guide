@@ -1,10 +1,9 @@
 export default [
     {
-      cssname: "",
+      cssname: "Mixin's #1",
       cssid: 0,
-      cssimageUrl: "",
-      cssimages01: "",
-      cssdescription: "",
+      cssnum: "Tip #1",
+      cssinfo01: "Be sure there is no space between the name and () for example: .flexrow();",
     },
   ];
   

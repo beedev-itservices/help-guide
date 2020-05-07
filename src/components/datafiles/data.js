@@ -1,4 +1,4 @@
-export default [  
+export default [
   {
     htmlname: "Main Required Tags",
     htmlid: 0,
@@ -14,6 +14,13 @@ export default [
     htmlnum: "Tip #2",
     htmlinfo01: "* <DOCTYPE html>",
     htmlinfo02: "* <br>",
-    htmlinfo03: "* <img src="" />",
+    htmlinfo03: "* <img src='' />",
+  },
+  {
+    cssname: "Mixin's #1",
+    cssid: 0,
+    cssnum: "Tip #1",
+    cssinfo01: "Be sure there is no space between the name and () for example: .flexrow();",
   },
 ];
+  
