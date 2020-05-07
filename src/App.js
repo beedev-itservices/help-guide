@@ -41,7 +41,7 @@ export default function App() {
           <Route path="/" component={Home} />
         </Switch>
         <div className="Footer">
-         Footer Text
+         Created by BeeDev IT Services
         </div>
       </div>
     );
