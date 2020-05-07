@@ -292,3 +292,12 @@ body {
   font-size: 1.2em;
   padding: 1em;
 }
+.App .Footer .madeby {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.App .Footer .madeby img {
+  margin: 10px;
+  width: 30px;
+}
