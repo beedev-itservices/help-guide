@@ -2,14 +2,12 @@ import React, { useState } from 'react';
 import './css/App.css';
 import Home from "./components/Home";
 import { Route, Link, Switch } from "react-router-dom";
-import data from "./components/datafiles/data";
-import HtmlList from "./components/HtmlList";
-import CssList from "./components/CssList";
-import JsList from "./components/JsList";
-import ReactList from "./components/ReactList";
+import Html from "./components/Html";
+import Css from "./components/Css";
+import Js from "./components/Js";
+import ReactGuide from "./components/ReactGuide";
 
 export default function App() {
-  const [tips] = useState(data);
     return (
       <div className="App">
         <nav>
@@ -27,16 +25,16 @@ export default function App() {
         </nav>
         <Switch>
           <Route path="/html-guide">
-            <HtmlList items={tips} />
+            <Html />
           </Route>
           <Route path="/css-guide">
-            <CssList items={tips} />
+            <Css />
           </Route>
           <Route path="/js-guide">
-            <JsList items={tips} />
+            <Js />
           </Route>
           <Route path="/react-guide">
-            <ReactList items={tips} />
+            <ReactGuide />
           </Route>
           <Route path="/" component={Home} />
         </Switch>
