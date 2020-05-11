@@ -13,7 +13,7 @@ function HtmlList(props) {
         </div>
         <div className="guide-words">
           <h4>
-              Below are different tips, tricks, and hints for using or working with HTML.  Click on the picture for more informaion.
+              Below are different tips, tricks, and hints for using or working with HTML.
           </h4>
         </div>
       </div>

@@ -153,7 +153,7 @@ body {
 }
 .App {
   background-color: #FDFDBE;
-  color: #0c012c;
+  color: #040010;
 }
 .App nav {
   display: flex;
@@ -199,17 +199,17 @@ body {
   align-items: center;
   justify-content: space-evenly;
   padding: 1.2em;
-  color: #0c012c;
+  color: #040010;
   font-size: 3em;
   font-weight: bold;
 }
 .App .home-wrapper .home-button {
-  background-color: #7DE4EB;
+  background-color: #3F7C81;
   padding: 0.5em 1em;
   margin: 0.5em;
-  color: #0c012c;
+  color: #040010;
   font-size: 0.33em;
-  border: 4px groove #7DE4EB;
+  border: 4px groove #3F7C81;
 }
 .App .guide-wrapper {
   display: flex;
@@ -230,15 +230,15 @@ body {
   align-items: center;
 }
 .App .guide-wrapper .guide .guide-header button {
-  background-color: #7DE4EB;
+  background-color: #3F7C81;
   padding: 0.5em 1em;
   margin: 0.5em;
-  color: #0c012c;
+  color: #FDFDBE;
   font-size: 1em;
-  border: 4px groove #7DE4EB;
+  border: 4px groove #3F7C81;
 }
 .App .guide-wrapper .guide .guide-header h1 {
-  color: #0c012c;
+  color: #040010;
   font-size: 2em;
   font-weight: bold;
 }
@@ -247,13 +247,15 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #0c012c;
+  color: #040010;
   text-align: center;
 }
 .App .guide-wrapper .the-items {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-evenly;
+  align-items: flex-start;
   flex-wrap: wrap;
   padding: 1em;
   margin: o 1em 1em 1em;
@@ -264,22 +266,109 @@ body {
   justify-content: center;
   align-items: center;
   padding: 1em;
+  margin: 1em;
   width: 400px;
-  border: 4px groove #7DE4EB;
 }
 .App .guide-wrapper .the-items .item-card h3 {
-  color: #0c012c;
+  color: #040010;
   font-size: 1.3em;
   font-weight: bold;
   padding: 0.3em;
 }
 .App .guide-wrapper .the-items .item-card .item-info {
-  color: #0c012c;
+  color: #040010;
   font-size: 1.1em;
 }
 .App .guide-wrapper .the-items .item-card .item-info p {
   margin: 0.5em 0.5em 0.7em 0.5em;
   padding: 0.2em;
+}
+.App .about-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.App .about-wrapper .about-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1em;
+}
+.App .about-wrapper .about-header h1 {
+  color: #3F7C81;
+  font-size: 2em;
+  font-weight: bold;
+}
+.App .about-wrapper .about-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60rem;
+  padding: 1em;
+  margin: 1em;
+}
+.App .about-wrapper .about-text p {
+  color: #040010;
+  font-size: 1.3em;
+}
+.App .about-wrapper .about-the-authors {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1em;
+}
+.App .about-wrapper .about-the-authors .author-heading h2 {
+  color: #3F7C81;
+  font-size: 1.8em;
+  margin: 1em;
+}
+.App .about-wrapper .about-the-authors .the-cards {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.App .about-wrapper .about-the-authors .the-cards .author-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.App .about-wrapper .about-the-authors .the-cards .author-card .author {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 6px groove #F57D84;
+  margin: 1em;
+  width: 35em;
+}
+.App .about-wrapper .about-the-authors .the-cards .author-card .author .author-picture {
+  padding: 0.5em;
+}
+.App .about-wrapper .about-the-authors .the-cards .author-card .author .author-picture img {
+  width: 15em;
+}
+.App .about-wrapper .about-the-authors .the-cards .author-card .author .author-info {
+  padding: 0.5em;
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.App .about-wrapper .about-the-authors .the-cards .author-card .author .author-info h4 {
+  font-size: 1.3em;
+  font-weight: 600;
+  color: #3F7C81;
+  margin: 0.3em;
+}
+.App .about-wrapper .about-the-authors .the-cards .author-card .author .author-info p {
+  font-size: 1em;
+  color: #040010;
+  margin: 1em 0.2em;
 }
 .App .Footer {
   display: flex;

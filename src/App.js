@@ -2,10 +2,11 @@ import React, { useState } from 'react';
 import './css/App.css';
 import Home from "./components/Home";
 import { Route, Link, Switch } from "react-router-dom";
-import Html from "./components/Html";
-import Css from "./components/Css";
-import Js from "./components/Js";
-import ReactGuide from "./components/ReactGuide";
+import About from './components/About';
+import Html from "./components/html/Html";
+import Css from "./components/css/Css";
+import Js from "./components/js/Js";
+import ReactGuide from "./components/react/ReactGuide";
 
 export default function App() {
     return (
@@ -17,6 +18,7 @@ export default function App() {
             </div>
           <div className="nav-links">
             <Link to="/">Home</Link>
+            <Link to="/about">About</Link>
             <Link to="/html-guide">HTML Guide</Link>
             <Link to="/css-guide">CSS Guide</Link>
             <Link to="/js-guide">JS Guide</Link>
@@ -24,6 +26,9 @@ export default function App() {
           </div>
         </nav>
         <Switch>
+          <Route path="/about">
+            <About />
+          </Route>
           <Route path="/html-guide">
             <Html />
           </Route>

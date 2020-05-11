@@ -14,6 +14,6 @@ export default [
     htmlnum: "Tip #2",
     htmlinfo01: "* <DOCTYPE html>",
     htmlinfo02: "* <br>",
-    htmlinfo03: "",
+    htmlinfo03: "* <img />",
   },
 ];

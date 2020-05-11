@@ -1,6 +1,5 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
-import './../css/App.css';
 
 function CssList(props) {
   const { goBack } = useHistory();
@@ -14,20 +13,22 @@ function CssList(props) {
         </div>
         <div className="guide-words">
           <h4>
-              Below are different tips, tricks, and hints for using or working with HTML.  Click on the picture for more informaion.
+              Below are different tips, tricks, and hints for using or working with CSS.
           </h4>
         </div>
       </div>
       <div className="the-items">
         {props.items.map(item => (
           <div className="item-card" key={item.cssid}>
-              <img
-                className="item-list-image"
-                src={item.cssimageUrl}
-                alt={item.cssname}
-              />
-              <p>{item.cssname}</p>
+          <h3>{item.cssnum}</h3>
+          <h3>{item.cssname}</h3>
+          <div className="item-info">
+            <p>{item.cssinfo01}</p>
+            <p>{item.cssinfo02}</p>
+            <p>{item.cssinfo03}</p>
+            <p>{item.cssinfo04}</p>
           </div>
+      </div>
         ))}
       </div>
     </div>
