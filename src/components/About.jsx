@@ -25,7 +25,7 @@ function About() {
                     <div className="author-card">
                         <div className="author">
                             <div className="author-picture">
-                                <img src="http://images.craftsnherbs.com/melissa.png" alt="" />
+                                <img src="https://images.craftsnherbs.com/melissa.png" alt="" />
                             </div>
                             <div className="author-info">
                                 <h4>Melissa Longenberger</h4>
@@ -33,17 +33,7 @@ function About() {
                             </div>
                         </div>
                     </div>
-                    <div className="author-card">
-                        <div className="author">
-                            <div className="author-picture">
-                                <img src="http://images.craftsnherbs.com/melissa.png" alt="" />
-                            </div>
-                            <div className="author-info">
-                                <h4>Melissa Longenberger</h4>
-                                <p>About Melissa</p>
-                            </div>
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
             

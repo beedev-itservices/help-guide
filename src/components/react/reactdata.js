@@ -1,6 +1,6 @@
 export default [
     {
-      reactname: "",
+      reactname: "Content comming soon",
       reactid: 0,
       reactimageUrl: "",
       reactimages01: "",

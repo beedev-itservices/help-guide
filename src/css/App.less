@@ -38,20 +38,35 @@
         }
     }
     .home-wrapper {
-        .flexrow();
+        .flexcolumn();
         justify-content: space-evenly;
         padding: 1.2em;
         color: @font;
         font-size: 3em;
         font-weight: bold;
 
-        .home-button {
-            background-color: @alt;
-            padding: .5em 1em;
-            margin: .5em;
-            color: @font;
-            font-size: .33em;
-            border: @altborder;
+        .home-section {
+            .flexcolumn();
+            h2 {
+                font-size: 1em;
+            }
+            p {
+                font-size: .45em;
+                font-weight: 100;
+                padding: 5px;
+            }
+        }
+        .home-buttons {
+            .flexrow();
+
+            .home-button {
+                background-color: @alt;
+                padding: .5em 1em;
+                margin: .5em;
+                color: @font;
+                font-size: .33em;
+                border: @altborder;
+            }
         }
     }
     .guide-wrapper {

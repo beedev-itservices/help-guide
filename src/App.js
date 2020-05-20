@@ -45,8 +45,8 @@ export default function App() {
         </Switch>
         <div className="Footer">
         <div className="madeby">
-        <img src="http://images.craftsnherbs.com/beelogo.jpg" alt="" />
-        <h4>&copy; 2020 by BeeDev IT Services</h4>
+        <img src="https://images.craftsnherbs.com/beelogo.jpg" alt="" />
+        <h4>Created by BeeDev IT Services &copy; 2020</h4>
         </div>
         </div>
       </div>

@@ -5,8 +5,8 @@ export default [
     htmlnum: "Tip #1",
     htmlinfo01: "* <!DOCTYPE html> = This should be at the beginning of all documents",
     htmlinfo02: "* <html> </html> = Will follow the declairation of Doctype",
-    htmlinfo03: "* <head> </head> = This is the 1st section inside teh html tags and contains unseen information, meta data, and styling instructions",
-    htmlinfo04: "* <body> </body> = This follows the head section and contains the web page content",
+    htmlinfo03: "* <head> </head> = This is the 1st section inside the html tags and contains unseen information, meta data, and styling instructions",
+    htmlinfo04: "* <body> </body> = This follows the head section and contains the web page content, the meat and potatoes of the site",
   },
   {
     htmlname: "Closing tags not required",
@@ -15,5 +15,26 @@ export default [
     htmlinfo01: "* <DOCTYPE html>",
     htmlinfo02: "* <br>",
     htmlinfo03: "* <img />",
+  },
+  {
+    htmlname: "Indenting",
+    htmlid: 2,
+    htmlnum: "Tip #3",
+    htmlinfo01: "* For ease of locating items in your code and for Developers that may follow you be sure to indent your code",
+  },
+  {
+    htmlname: "Commenting",
+    htmlid: 3,
+    htmlnum: "Tip #4",
+    htmlinfo01: "* Commenting in HTML is like adding notes that only the Developers will see",
+    htmlinfo02: "* Make sure that the comments added are relevent to what and where you are placing the comment",
+    htmlinfo03: "* To comment out in an HTML doc you can typically highlight the line and click ctrl + /",
+    htmlinfo04: "* If that doesn't work you will need to use the following <!-- comment information -->",
+  },
+  {
+    htmlname: "Background tip",
+    htmlid: 4,
+    htmlnum: "Tip #5",
+    htmlinfo01: "HTML was created to kinda copy a newspaper format.  With sections and paragraphs.",
   },
 ];

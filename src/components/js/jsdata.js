@@ -1,6 +1,6 @@
 export default [
     {
-      jsname: "",
+      jsname: "Content comming soon",
       jsid: 0,
       jsimageUrl: "",
       jsimages01: "",
