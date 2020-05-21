@@ -15,6 +15,7 @@ function JsList(props) {
           <h4>
               Below are different tips, tricks, and hints for using or working with JS.
           </h4>
+          <p>What is JS?  This is the functionality behind the website.  Give the end-user the ability to interact with the page</p>
         </div>
       </div>
       <div className="the-items">

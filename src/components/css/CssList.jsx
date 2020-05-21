@@ -15,6 +15,7 @@ function CssList(props) {
           <h4>
               Below are different tips, tricks, and hints for using or working with CSS.
           </h4>
+          <p>What is CSS?  This is used to add the paint to the website... to style it and make it look pleasing.</p>
         </div>
       </div>
       <div className="the-items">

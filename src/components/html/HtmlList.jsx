@@ -15,6 +15,7 @@ function HtmlList(props) {
           <h4>
               Below are different tips, tricks, and hints for using or working with HTML.
           </h4>
+          <p>What is HTML?  This is the backbone of every website.  It tells the browser what it needs to load and see</p>
         </div>
       </div>
       <div className="the-items">
