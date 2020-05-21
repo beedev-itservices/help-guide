@@ -45,5 +45,5 @@ export default [
       cssnum: "Tip #6",
       cssinfo01: "Be sure to name your classes or id in a way that helps identify the element well. CSS documents can get long",
     },
-  ];
+  ]; 
   
