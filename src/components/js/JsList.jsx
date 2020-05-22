@@ -20,14 +20,14 @@ function JsList(props) {
       </div>
       <div className="the-items">
         {props.items.map(item => (
-          <div className="item-card" key={item.jsid}>
-          <h3>{item.jsnum}</h3>
-          <h3>{item.jsname}</h3>
+          <div className="item-card" key={item.id}>
+          <h3>{item.num}</h3>
+          <h3>{item.name}</h3>
           <div className="item-info">
-            <p>{item.jsinfo01}</p>
-            <p>{item.jsinfo02}</p>
-            <p>{item.jsinfo03}</p>
-            <p>{item.jsinfo04}</p>
+            <p>{item.info01}</p>
+            <p>{item.info02}</p>
+            <p>{item.info03}</p>
+            <p>{item.info04}</p>
           </div>
       </div>
         ))}

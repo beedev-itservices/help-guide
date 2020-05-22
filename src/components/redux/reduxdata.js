@@ -1,9 +1,9 @@
 export default [
     {
-      name: "Content coming soon",
+      name: "Content Coming Soon!",
       id: 0,
       num: "",
       info01: "",
     },
-  ];
+  ]; 
   

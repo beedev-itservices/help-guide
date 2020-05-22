@@ -1,21 +1,20 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
 
-function CssList(props) {
+function BasicsList(props) {
   const { goBack } = useHistory();
-  console.log("ml: csslist.jsx: csslist: ", props);
+  console.log("ml: basicslist.jsx: basicslist: ", props);
   return (
     <div className="guide-wrapper">
       <div className="guide">
         <div className="guide-header">
           <button onClick={() => goBack()}>Go Back</button>
-          <h1>The CSS Guides</h1>
+          <h1>The Basics Guides</h1>
         </div>
         <div className="guide-words">
           <h4>
-              Below are different tips, tricks, and hints for using or working with CSS.
+              Below are different tips, tricks, and hints for using or working in Web Development.
           </h4>
-          <p>What is CSS?  This is used to add the paint to the website... to style it and make it look pleasing.</p>
         </div>
       </div>
       <div className="the-items">
@@ -36,4 +35,4 @@ function CssList(props) {
   );
 }
 
-export default CssList;
+export default BasicsList;

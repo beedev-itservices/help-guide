@@ -20,14 +20,14 @@ function HtmlList(props) {
       </div>
       <div className="the-items">
         {props.items.map(item => (
-          <div className="item-card" key={item.htmlid}>
-              <h3>{item.htmlnum}</h3>
-              <h3>{item.htmlname}</h3>
+          <div className="item-card" key={item.id}>
+              <h3>{item.num}</h3>
+              <h3>{item.name}</h3>
               <div className="item-info">
-                <p>{item.htmlinfo01}</p>
-                <p>{item.htmlinfo02}</p>
-                <p>{item.htmlinfo03}</p>
-                <p>{item.htmlinfo04}</p>
+                <p>{item.info01}</p>
+                <p>{item.info02}</p>
+                <p>{item.info03}</p>
+                <p>{item.info04}</p>
               </div>
           </div>
         ))}

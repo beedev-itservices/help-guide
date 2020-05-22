@@ -1,10 +1,10 @@
 export default [
     {
-      reactname: "Content comming soon",
-      reactid: 0,
-      reactimageUrl: "",
-      reactimages01: "",
-      reactdescription: "",
+      name: "Content coming soon",
+      id: 0,
+      imageUrl: "",
+      images01: "",
+      description: "",
     },
   ];
   

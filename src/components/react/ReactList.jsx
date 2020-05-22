@@ -19,14 +19,14 @@ function ReactList(props) {
       </div>
       <div className="the-items">
         {props.items.map(item => (
-          <div className="item-card" key={item.reactid}>
-          <h3>{item.reactnum}</h3>
-          <h3>{item.reactname}</h3>
+          <div className="item-card" key={item.id}>
+          <h3>{item.num}</h3>
+          <h3>{item.name}</h3>
           <div className="item-info">
-            <p>{item.reactinfo01}</p>
-            <p>{item.reactinfo02}</p>
-            <p>{item.reactinfo03}</p>
-            <p>{item.reactinfo04}</p>
+            <p>{item.info01}</p>
+            <p>{item.info02}</p>
+            <p>{item.info03}</p>
+            <p>{item.info04}</p>
           </div>
       </div>
         ))}
