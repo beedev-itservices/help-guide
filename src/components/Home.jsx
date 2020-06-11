@@ -27,6 +27,7 @@ function Home() {
                 <button className="md-button home-button" onClick={routeToGuides}>Beginner Guides</button>
                 <button className="md-button home-button" onClick={routeToBasics}>See Basics Guides</button>
                 <button className="md-button home-button" onClick={routeToAdvanced}>Advanced Guides</button>
+                <button className="md-button home-button" id="edit">Edit</button>
             </div>
         </div>
     );

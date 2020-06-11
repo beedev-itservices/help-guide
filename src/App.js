@@ -13,8 +13,25 @@ import Advanced from "./components/Advanced";
 import Node from "./components/node/Node";
 import Java from "./components/java/Java";
 import Redux from "./components/redux/Redux";
+import Login from "./components/Login";
+import PrivateRoute from "./components/PrivateRoute";
+import FriendsList from "./components/FriendsList";
+import * as firebase from "firebase/app";
+import "firebase/firestore";
+
 
 export default function App() {
+  const firebaseConfig = {
+    apiKey: "AIzaSyD3UZoe1awNs2fvWiZPjIyXPexmy1OTKyM",
+    authDomain: "web-dev-help-guide.firebaseapp.com",
+    databaseURL: "https://web-dev-help-guide.firebaseio.com",
+    projectId: "web-dev-help-guide",
+    storageBucket: "web-dev-help-guide.appspot.com",
+    messagingSenderId: "453353654781",
+    appId: "1:453353654781:web:7e1bf6ceac6a0cc061b194",
+    measurementId: "G-PLT6YFFP37"
+  };
+
     return (
       <div className="App">
         <nav>
@@ -27,6 +44,7 @@ export default function App() {
             <Link to="/about">About</Link>
             <Link to="/the-guides">Beginner Guides</Link>
             <Link to="/advanced-guides">Advanced Guides</Link>
+            <Link to="/login">Admin</Link>
           </div>
         </nav>
         <Switch>
@@ -63,6 +81,8 @@ export default function App() {
           <Route path="/J=java-guide">
             <Java />
           </Route>
+          <Route path="/login" render={(props) => <Login {...props} />} />
+          <PrivateRoute path="/protected" component={FriendsList} />
           <Route path="/" component={Home} />
         </Switch>
         <div className="Footer">
