@@ -401,6 +401,59 @@ body {
   color: #040010;
   margin: 1em 0.2em;
 }
+.App .admin-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.App .admin-wrapper .admin {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1em;
+}
+.App .admin-wrapper .admin h1 {
+  color: #3F7C81;
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+.App .admin-wrapper .admin .admin-form {
+  border: 4px groove #3F7C81;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em 2em;
+}
+.App .admin-wrapper .admin .admin-form .form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.App .admin-wrapper .admin .admin-form .form label {
+  padding: 1em;
+}
+.App .admin-wrapper .admin .admin-form .form input {
+  padding: 1em;
+}
+.App .admin-wrapper .admin .admin-form .form button {
+  background-color: #3F7C81;
+  padding: 0.5em 1em;
+  margin: 0.5em;
+  color: #040010;
+  border: 4px groove #3F7C81;
+}
+.App .admin-wrapper .admin .admin-form button {
+  background-color: #3F7C81;
+  padding: 0.5em 1em;
+  margin: 0.5em;
+  color: #040010;
+  border: 4px groove #3F7C81;
+}
 .App .Footer {
   display: flex;
   flex-direction: column;

@@ -207,6 +207,49 @@
             }
         }
     }
+    .admin-wrapper {
+        .flexcolumn();
+        .admin {
+            .flexcolumn();
+            margin: 1em;
+            h1 {
+                color: @alt;
+                font-size: 2em;
+                font-weight: bold;
+                margin-bottom: 1em;
+            }
+            .admin-form {
+                border: @altborder;
+                .flexcolumn();
+                padding: 1em 2em;
+
+                .form {
+                    .flexcolumn();
+
+                    label {
+                        padding: 1em;
+                    }
+                    input {
+                        padding: 1em;
+                    }
+                    button {
+                        background-color: @alt;
+                        padding: .5em 1em;
+                        margin: .5em;
+                        color: @font;
+                        border: @altborder;
+                    }
+                }
+                button {
+                    background-color: @alt;
+                    padding: .5em 1em;
+                    margin: .5em;
+                    color: @font;
+                    border: @altborder;
+                }
+            }
+        }
+    }
     .Footer {
         .flexcolumn();
         border: 3px solid @borderbg;
