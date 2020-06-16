@@ -454,6 +454,32 @@ body {
   color: #040010;
   border: 4px groove #3F7C81;
 }
+.App .profile-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.App .profile-wrapper .profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1em;
+}
+.App .profile-wrapper .profile h2 {
+  font-size: 2em;
+}
+.App .profile-wrapper .profile h3 {
+  font-size: 1.5em;
+}
+.App .profile-wrapper .profile .button {
+  background-color: #3F7C81;
+  padding: 0.5em 1em;
+  margin: 0.5em;
+  color: #040010;
+  border: 4px groove #3F7C81;
+}
 .App .Footer {
   display: flex;
   flex-direction: column;

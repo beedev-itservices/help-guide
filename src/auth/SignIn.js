@@ -1,15 +1,18 @@
 import React, {useState} from "react";
 import { Link } from "@reach/router";
+import { signInWithGoogle } from "./firebase";
 import { auth } from "./firebase";
 
 const SignIn = () => {
+
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [error, setError] = useState(null);
-    const signInWithEmailAndPasswordHandler = (event, email, password) => {
+
+    const signInWithEmailAndPasswordHandler = (event,email, password) => {
         event.preventDefault();
         auth.signInWithEmailAndPassword(email, password).catch(error => {
-          setError("Error signing in with password and email!");
+        setError("Error signing in with password and email!");
           console.error("Error signing in with password and email", error);
         });
       };
@@ -53,12 +56,26 @@ const SignIn = () => {
             id="userPassword"
             onChange = {(event) => onChangeHandler(event)}
           />
-          <button className="" onClick = {(event) => {signInWithEmailAndPasswordHandler(event, email, password)}}>
+          <button 
+          onClick = {(event) => {signInWithEmailAndPasswordHandler(event, email, password)}}>
             Sign in
           </button>
         </form>
         <p>or</p>
-        <button>Sign in with Google</button>
+        <button
+          onClick={() => {signInWithGoogle();}}>
+          Sign in with Google
+        </button>
+        {/* <p className="text-center my-3">
+          Don't have an account?{" "}
+          <Link to="signUp" className="text-blue-500 hover:text-blue-600">
+            Sign up here
+          </Link>{" "}
+          <br />{" "}
+          <Link to="passwordReset" className="text-blue-500 hover:text-blue-600">
+            Forgot Password?
+          </Link>
+        </p> */}
       </div>
     </div>
   );

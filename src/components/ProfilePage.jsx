@@ -1,26 +1,22 @@
-import React from "react";
+import React, { useContext } from "react";
+import { UserContext } from "../auth/UserProvider";
+import {auth} from "../auth/firebase";
+import { navigate } from "@reach/router";
 
 const ProfilePage = () => {
+  const user = useContext(UserContext);
+  const {photoURL, displayName, email} = user;
+  console.log(user);
+  
   return (
-    <div className = "mx-auto w-11/12 md:w-2/4 py-8 px-4 md:px-8">
-      <div className="flex border flex-col items-center md:flex-row md:items-start border-blue-400 px-3 py-4">
-        <div
-          style={{
-            background:
-                `url(https://res.cloudinary.com/dqcsk8rsc/image/upload/v1577268053/avatar-1-bitmoji_upgwhc.png)  no-repeat center center`,
-            backgroundSize: "cover",
-            height: "200px",
-            width: "200px"
-          }}
-          className="border border-blue-300"
-        ></div>
-        <div className = "md:pl-4">
-        <h2 className = "text-2xl font-semibold">Faruq</h2>
-        <h3 className = "italic">faruq123@gmail.com</h3>
-        </div>
+    <div className = "profile-wrapper">
+      <div className="profile">
+        <h2>{displayName}</h2>
+        <h3>{email}</h3>
+        <button className="button" onClick = {() => {auth.signOut()}}>Sign out</button>
       </div>
-      <button className = "w-full py-3 bg-red-600 mt-4 text-white">Sign out</button>
     </div>
   ) 
 };
 export default ProfilePage;
+
