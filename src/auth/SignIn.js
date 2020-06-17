@@ -61,11 +61,11 @@ const SignIn = () => {
             Sign in
           </button>
         </form>
-        <p>or</p>
+        {/* <p>or</p>
         <button
           onClick={() => {signInWithGoogle();}}>
           Sign in with Google
-        </button>
+        </button> */}
         {/* <p className="text-center my-3">
           Don't have an account?{" "}
           <Link to="signUp" className="text-blue-500 hover:text-blue-600">
