@@ -252,6 +252,7 @@
     }
     .profile-wrapper {
         .flexcolumn();
+        min-height: 600px;
         .profile {
             .flexcolumn();
             margin: 1em;
@@ -263,6 +264,44 @@
                 margin: .5em;
                 color: @font;
                 border: @altborder;
+            }
+        }
+        .edits {
+            .the-lists {
+                .flexcolumn();
+                .basic-list {
+                    .flexcolumn();
+                    .panel {
+                        .flexcolumn();
+                        .panel-heading {
+                            h3 {font-size: 1.5em;}
+                        }
+                        .panel-body {
+                            .flexcolumn();
+                            .table {
+                                .flexcolumn();
+                                .table-heading {
+                                    .flexrow();
+                                    th {
+                                        padding: 1em;
+                                        border-bottom: @altborder;
+                                    }
+                                }
+                                .table-body {
+                                    .flexcolumn();
+                                    .table-row {
+                                        .flexrow();
+                                        border: @altborder;
+                                        td {
+                                            padding: 1em
+                                        }
+                                    }
+
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
     }

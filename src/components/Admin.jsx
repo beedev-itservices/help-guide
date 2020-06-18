@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { Router } from "@reach/router";
 import SignIn from "../auth/SignIn";
-import ProfilePage from "./ProfilePage";
+import ProfilePage from "../admin/ProfilePage";
 // import SignUp from "../auth/SignUp";
 // import PasswordReset from "../auth/PasswordReset";
 import UserProvider  from "../auth/UserProvider";

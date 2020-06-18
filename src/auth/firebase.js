@@ -1,7 +1,10 @@
-import firebase from "firebase/app";
+// import firebase from "firebase/app";
+import * as firebase from 'firebase';
 import "firebase/auth";
 import "firebase/firestore";
-import { functions } from "firebase";
+// import { functions } from "firebase";
+
+const settings = {timestampsInSnapshots: true};
 
 const firebaseConfig = {
     apiKey: "AIzaSyB9GEjukQsQ99VgOA7EqxBedraANYKuhdk",
@@ -59,3 +62,6 @@ const getUserDocument = async uid => {
     console.error("Error fetching user", error);
   }
 };
+
+firebase.firestore().settings(settings);
+export default firebase;

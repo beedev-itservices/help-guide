@@ -459,6 +459,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  min-height: 600px;
 }
 .App .profile-wrapper .profile {
   display: flex;
@@ -479,6 +480,63 @@ body {
   margin: 0.5em;
   color: #040010;
   border: 4px groove #3F7C81;
+}
+.App .profile-wrapper .edits .the-lists {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.App .profile-wrapper .edits .the-lists .basic-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.App .profile-wrapper .edits .the-lists .basic-list .panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.App .profile-wrapper .edits .the-lists .basic-list .panel .panel-heading h3 {
+  font-size: 1.5em;
+}
+.App .profile-wrapper .edits .the-lists .basic-list .panel .panel-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.App .profile-wrapper .edits .the-lists .basic-list .panel .panel-body .table {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.App .profile-wrapper .edits .the-lists .basic-list .panel .panel-body .table .table-heading {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.App .profile-wrapper .edits .the-lists .basic-list .panel .panel-body .table .table-heading th {
+  padding: 1em;
+  border-bottom: 4px groove #3F7C81;
+}
+.App .profile-wrapper .edits .the-lists .basic-list .panel .panel-body .table .table-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.App .profile-wrapper .edits .the-lists .basic-list .panel .panel-body .table .table-body .table-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 4px groove #3F7C81;
+}
+.App .profile-wrapper .edits .the-lists .basic-list .panel .panel-body .table .table-body .table-row td {
+  padding: 1em;
 }
 .App .Footer {
   display: flex;
